@@ -1,0 +1,14 @@
+td{
+  color : red;
+}
+#Body{
+	 border: 3px red dashed; 
+	 }
+	 
+.required{
+	color : blue;
+	}
+	
+table{
+	background :lightgrey;
+	} <!-- internal style sheet -->
