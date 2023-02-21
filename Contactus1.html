@@ -2,69 +2,142 @@
 <!--
 Name					: Philippe Lewis Racine
 Date created			: Aug 25, 2021
-Most recent revision	:
+Most recent revision	: Sep 08, 2021
 -->
 <html Lang="en">
 	<head>
 	<title>Contact Us</title>
+	<script type="text/JavaScript" src="Contactus1.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        rel="stylesheet" type="text/css" />
+	
+	<style>
+	
+	
+	label{
+		font-weight:bold;
+		}
+	nav a:visited{
+		color:green;
+		}
+	
+	 
+	nav a{
+		text-decoration:none;
+		
+		}
+		
+	nav {
+			border-top: thin #5b7d87 solid;
+			border-bottom: thin #5b7d87 solid;
+			padding-top: 12px;
+			padding-bottom: 12px;
+		}
+		nav .btn:hover{
+			background-color:#5b7d87;
+			color:#fef9ff;
+			font-weight:bold;
+			
+		{	
+		
+	</style
+
+
 	</head>
 
 	<body>
+	<div class="container">
 		<Main>
 		<Header>
-		<center><h1>Pizza for All</h1></center>
+		<center><h1><em>Pizza for All</em></h1></center>
+		<link href="styles1/restaurantStyles.css" rel="stylesheet" type="text/css" />
 		</header>
-		<hr />
+		
 		<nav>
-		<a href="Resto1.html">Home</a>
-		<a href="Menu1.html">Menu</a>
-		<a href="Contactus1.html">Contact Us</a>
+		<a class="btn badge-pill" href="Resto1.html">Home</a>
+		<a class="btn badge-pill" href="Menu1.html">Menu</a>
+		<a class="btn badge-pill" href="Contactus1.html">Contact Us</a>
 		</nav>
-		<hr />
-	<center><form action="send-request.html" method="post"><br />
-		<label for="Name">Name:</label><br />
-		<input type="text" id="Name" name="Name"><br />
-		<label for="Email">Email:</label><br />
-		<input type="text" id="Email" Name="Email"><br />
+		<section>
+		
+		
+	<center><form name="Contactus1.html" onsubmit="return validateItems();" 
+          onreset="resetForm();" class="form-inline" action="submit.html" method="post"><br />
+	
+		<div class="col-md-3">
+		<label for="name">Name:</label><br />
+		<input type="name" class="form-control" id="name" placeholder="FullName"><br />
+		</div>
+		<div class="col-md-3">
+		<label for="email">Email:</label><br />
+		<input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email"><br />
+		</div>
+		<div class="col-md-3">
 		<label for="PhoneNumber">Phone:</label><br />
-		<input type="text" id="Phone" Name="Phone"><br />
+		<input type="number" class="form-control" id="phone" placeholder="PhoneNumber"><br />
+		</div>
+		<div class="form-group">
 		<label for="contact">Reason for Inquiry:</label><br />
-		<select id="contact" name="contact"><br />
+		<select id="contact" placeholder="Choice"><br />
 		<option value="default" selected>--catering--</option><br />
 		<option value="privateParty">Private Party</option><br />
 		<option value="feedback">Feedback</option><br />
 		<option value="other">Other</option><br />
 		</select><br />
+		</div>
+		<div class="form-group">
 		<label for="info">Additional Information:</label><br />
-		<textarea id="info" name="info"></textarea><br />
+		<textarea id="info" placeholder="Info"></textarea><br />
+		</div>
 		
 		<fieldset>
+		<div class="form-group">
 		<legend>Have you been to the Restaurant?</legend><br />
-		<input type="radio" id="choice1" name="questionnaire" value="no">
-		<label for="choice1">No</legend>
-		<input type="radio" id="choice2" name="questionnaire" value="yes">
-		<label for="choice2">Yes</legend>
+		<input type="radio" id="choice01" Name="questionnaire" value="no">
+		<label for="choice01">No</legend>
+		<input type="radio" id="choice02" Name="questionnaire" value="yes">
+		<label for="choice02">Yes</legend>
+		</div>
 		</fieldset>
+	
 		<fieldset>
-		<legend>Best days to contact you</legend>
-		<input type="checkbox" id="bestDays" name="contact" value="bestDays">
-		<label for="bestDays">M</label>
-		<input type="checkbox" id="bestDays" name="contact" value="BestDays">
-		<label for="bestDays">T</label>
-		<input type="checkbox" id="bestDays" name="contact" value="bestDays">
-		<label for="bestDays">W</label>
-		<input type="checkbox" id="bestDays" name="contact" value="bestDays">
-		<label for="bestDays">Th</label>
-		<input type="checkbox" id="bestDays" name="contact" value="bestDays">
-		<label for="bestDays">F</label>
+		<div class="form-group" form-check>
+		<legend>Best days to contact you</legend><br />
+		<input class="form-check-input" type="checkbox" id="bestDays" value="bestDays">
+		<label class="form-check-label" for="bestDays">M</label>
+		<input class="form-check-input" type="checkbox" id="bestDays" value="bestDays">
+		<label class="form-check-label" for="bestDays">T</label>
+		<input class="form-check-input" type="checkbox" id="bestDays" value="bestDays">
+		<label class="form-check-label" for="bestDays">W</label>
+		<input class="form-check-input" type="checkbox" id="bestDays" value="bestDays">
+		<label class="form-check-label" for="bestDays">Th</label>
+		<input class="form-check-input" type="checkbox" id="bestDays" value="bestDays">
+		<label class="form-check-label" for="bestDays">F</label>
+		</div>
 		</fieldset>
+		
+		<button type="submit" id="submitButton" class="btn btn-default">Send-Request</button>
+        <button type="reset" id="resetButton" class="btn">Reset</button>
+
+		</form>	
+		
 		</center>
-				<center>
+		<center>
 		<p>Location : 444-6th street, New Westminster, BC - Canada</p>
 		<p>Postal code	: V3L 1N7</p>
 		<p>Phone	: 1 438 935 9999</p>
-		</center>
+		
+		 </center>
+ 		
+	
+		</section>
 		<hr />
+		<footer>
+		
+		<p>&copy; 2021 Philippe Racine. All right reserved </p>
+		
+		</footer>
 		</main>
+		</div>
 	</body>
 </html>

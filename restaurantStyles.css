@@ -1,0 +1,29 @@
+/*
+Creator 					: Philippe Lewis Racine
+Date created				: Aug. 27, 2021
+Most recent revision		: Aug. 28, 2021
+*/
+	header, footer{
+		background-color: #5b7d87;
+		color: #fef9ff;
+	}
+
+	h1{
+		font-size: 2.5em;
+	}	
+	a:visited {
+		color: red;
+	}
+	a:active {
+	text-decoration: none;
+	}
+	input[type=Send-Request] {
+			font-size: 1.2em;
+			background-color: #546a7b;
+			color: #fef9ff;
+			padding: 4px 8px;
+		}
+	input[type=Send-Request]:hover {
+			background-color: #f2eded;
+			color: #546a7b;
+	}

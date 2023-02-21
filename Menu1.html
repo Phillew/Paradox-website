@@ -2,78 +2,160 @@
 <!--
 Name					: Philippe Lewis Racine
 Date created			: Aug 24, 2021
-Most recent revision	: 
+Most recent revision	: Sep 08,2021
 -->	
 <html Lang="en">
 	<head>
 		<title>Menu</title>
+	<style>	
+				
+	section{
+		background-color:lightgrey;
+		}
+	
+	nav a:visited{
+		color:green;
+			}
+	
+		
+	nav a{
+		text-decoration:none;
+		}	
+			
+	.table2, th, td{
+		border:1px solid black;
+		border-collapse:collapse;
+		height:35px
+		}
+	table{
+		width: 100%;
+		}
+	.table2 th{
+		background-color:white;
+		font-size:1.5em;
+		text-align:left;
+		}
+		
+	.table2 tbody tr:nth-child(even) {
+		background-color: white;
+		}
+			
+	
+	nav {
+			border-top: thin #5b7d87 solid;
+			border-bottom: thin #5b7d87 solid;
+			padding-top: 12px;
+			padding-bottom: 12px;
+		}
+		nav .btn:hover{
+			background-color:#5b7d87;
+			color:#fef9ff;
+			font-weight:bold;
+			
+		{
+	
+	</style>	
 	</head>
 	<body>
+	<div class="container">
 		<header>
-			<center><h1>Pizza for All</h1></center>
+			<center><h1><em>Pizza for All</em></h1></center>
+			<link href="styles1/restaurantStyles.css" rel="stylesheet" type="text/css" />
 		</header>
-		<hr />
-		<section>
-		<nav>
-			<a href="resto1.html"><ins>Home</ins></a>
-			<a href="Menu1.html"><ins>Menu</ins></a>
-			<a href="contactus1.html"><ins>Contact Us</ins></a>
-		</nav>
-		<hr />
-		<section>
-		<center>
-		<table>
 		
-			<tr>
-			<th>Pepperoni Pizza</th>
-			<th>Super Meat #1 Pizza</th>
-			<th>Super Meat #2 Pizza</th>
-			</tr>
-			<tr>
-			<td>Made with Ham, Salami</td>
-			<td>Made with Goat and Chicken</td>
-			<td>Made with Beef and Lamb</td>
-			</tr>
-			<tr>
-			<td>Parmesan and/or Mozzarela cheese</td>
-			<td>Parmesan and/or Mozzarela cheese</td>
-			<td>Parmesan and/or Mozzarela chesse</td>
-			</tr>
-			<tr>
-			<td>Tomatoes, Green and Red Peppers</td>
-			<td>Tomatoes, Green and Red Peppers</td>
-			<td>Tomatoes, Green and Red Peppers</td>
-			</tr>
-			<tr>
-			<td>Small= $6.95/ Med= $8.75/ Lrg= $10.95</td>
-			<td>Small= $8.75/ Med= $9.98/ Lrg= $11.95</td>
-			<td>Small= $9.75/ Med= 11.98/ Lrg= $13.95</td>
-			</tr>
+		
+		<nav>
+			<a class="btn badge-pill" href="resto1.html">Home</a>
+			<a class="btn badge-pill" href="Menu1.html">Menu</a>
+			<a class="btn badge-pill" href="contactus1.html">Contact Us</a>
+		</nav>
+		
+		<section>
+		
+	<div class="list-group" style="width="90%">
+	
+		<div style="width=30%; float:left; margin:50px;">
+		<h2>Pepperoni Pizza</h2>
+		<p>Made with Ham, Salami</p>
+		<p>Parmesan and/or Mozzarela cheese</p>
+		<p>Tomatoes, Green and Red Peppers</p>
+		<p>Small= $6.95/ Med= $8.75/ Lrg= $10.95</p>
+		</div>
+		
+		<div style="width=30%; float:left; margin:50px;" >
+		<h2>Super Meat #1 Pizza</h2>
+		<p>Made with Goat and Chicken</p>
+		<p>Parmesan and/or Mozzarela cheese</p>
+		<p>Tomatoes, Green and Red Peppers</p>
+		<p>Small= $8.75/ Med= $9.98/ Lrg= $11.95</p>
+		</div>	
+		
+		<div style="width=30%; float:left; margin:50px;">
+		<h2>Super Meat #2 Pizza</h2>
+		<p>Made with Beef and Lamb</<p>
+		<p>Parmesan and/or Mozzarela chesse</p>
+		<p>Tomatoes, Green and Red Peppers</p>
+		<p>Small= $9.75/ Med= 11.98/ Lrg= $13.95</p>
+		</div>		
+		
+	</div>
+		
+	<div class="list-group" style="width="90%">
+	
+		<div style="width=30%; float:left; margin:50px;">
+		<h2>Veggie Pizza</h2>
+		<p>Made with Green and Red peppers</p>
+		<p>Mushroom, Tomatoes, Olive</p>
+		<p>Small= $7.95/ Med= $10.95/ Lge= $13.95</p>
+		</div>
+		
+		<div style="width=30%; float:left; margin:50px;" >
+		<h2>Super Veggie Pizza</h2>
+		<p>Made with Green and Red Peppers</p>
+		<p>Mushroom, Tomatoes, Olive and Spinach</p>
+		<p>Small= $10.95/ Med= $13.95/ Lge= $15.99</p>
+		</div>	
+		
+		<div style="width=30%; float:left; margin:50px;">
+		<h2>Fruity Veggie Pizza</h2>
+		<p>Made with Green and Red Peppers</p>
+		<p>Super Veggie plus dry Pineapple and Papaya</p>
+		<p>Small= $12.95/ Med= $15.95/ Lge= $18.95</p>
+		</div>		
+		
+	</div>
+		
+		
+					
+			<table class="table2">	
+
 			
+			<thead>
 			<tr>
-			<th>Veggie Pizza</th>
-			<th>Supper Veggie Pizza</th>
-			<th>Fruity Veggie Pizza</th>
+			<th colspan="2">Beverages</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+			<td>Root Beer</>
+			<td>$3.00</td>
 			</tr>
 			<tr>
-			<td>Made with Green and Red pppers</td>
-			<td>Made with Green and Red Peppers</td>
-			<td>Made with Green and Red Peppers</td>
+			<td>Bottled Water</td>
+			<td>$1.25</td>
 			</tr>
 			<tr>
-			<td>Mushroom, Tomatoes, Olive</td>
-			<td>Mushroom, Tomatoes, Olive and Spinach</td>
-			<td>Super Veggie plus dry Pineapple and Papaya</td>
+			<td>Lemonade</td>
+			<td>$1.00</td>
 			</tr>
 			<tr>
-			<td>Small= $7.95/ Med= $10.95/ Lge= $13.95</td>
-			<td>Small= $10.95/ Med= $13.95/ Lge= $15.99</td>
-			<td>Small= $12.95/ Med= $15.95. Lge= $18.95</td>
+			<td>Iced Tea</td>
+			<td>$1.25</td>
 			</tr>
-												
+			</tbody>
 		</table>
 			
-		</center>
+		
 		<hr />
 		<center>
 			<p>Location : 444-6th street, New Westminster, BC - Canada</p>
@@ -81,6 +163,12 @@ Most recent revision	:
 			<p>Phone	: 1 438 935 9999</p>
 			</center>
 			<hr />	
+			
 		</section>
+		<footer>
+		<p>&copy; 2021 Philippe Racine. All right reserved </p>
+		
+		</footer>
+		</div>
 	</body>	 
 </html>	

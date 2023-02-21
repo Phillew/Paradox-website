@@ -2,46 +2,173 @@
 <!--
 name						: Philippe Lewis Racine
 Date created				: Aug 24,2021
-Most recent revision		:
+Most recent revision		: Sep 05,2021
 -->
-<HTML Lang="en">
+<HTML Lang="en"  xmlns="http://www.w3.org/1999/xhtml">
 <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width initial-scale=1 shrink-to-fit=no">
 <title>Home page</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<style>
+
+	section{
+		background-color:Indianred;
+		}
+	
+		
+	nav a:visited{
+		color:green;
+		}
+	
+	nav a{
+		text-decoration:none;
+		
+		}	
+	h1{
+		color:black;
+		font-size:50px;
+		}
+		
+	nav {
+			border-top: thin #5b7d87 solid;
+			border-bottom: thin #5b7d87 solid;
+			padding-top: 8px;
+			padding-bottom: 8px;
+		}
+		nav .btn:hover{
+			background-color:#5b7d87;
+			color:#fef9ff;
+			font-weight:bold;
+			
+		{	
+		
+		body {
+			max-width: 900px;
+			margin: 0 auto;
+		}
+		
+	div h3{
+		background-color:Indianred;
+		color:Indianred;
+		}
+		
+	
+	</style>
 </head>
-<body>
+<body onload="alert('This site is best viewed when javaScript is enabled');">
+<div class="container">
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <h3><em>We're opening a new location!</em></h3>
+    </div>
+    <div class="carousel-item">
+      <h3><em>We're rolling out our seasonal menu, with special options for this season.</em></h3>
+    </div>
+    <div class="carousel-item">
+      <h3><em>The Drink of the Month is Lemonade.</em></h3>
+    </div>
+  </div>
+  
+  
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
 	<main>
-		<header>
-			<h1><center>Pizza for All</center></h1>
-			<link href="styles1/restaurantStyles.css" rel="stylesheet" type="text/css" />
-			<style>
-			
-			
-			</style>
+		<header class="jumbotron">
+		<div>
+			<h1><em>Pizza for All</em></h1>
+			<h2><em>Restaurant</em></h2>
+			<h3 class="text-right mt-5">Grand opening in Delta- B.C</h3>
+			<h5 class="text-right mt-5">On October 06, 2021</h5
+		 </div>	
 		</header>
-			<hr />
+			
 		<nav>
-			<a href="Resto1.html"><ins>Home</ins></a>
-			<a href="Menu1.html"><ins>Menu</ins></a>
-			<a href="contactus1.html"><ins>Contact Us</ins></a>
-		</nav>	
-			<hr />
-		<section>
-			<center><a href="Pizza1.jpg"><img src="images/Pizza1.jpg" alt="Resto site1 logo" /></a></center>
-			<center>
-			<p><strong>Here! We have Pizza for all taste</strong></p>
-			<p>With Dine in and takeout options</p>
+			<a  class="btn badge-pill" href="Resto1.html">Home</a>
+			<a  class="btn badge-pill" href="Menu1.html">Menu</a>
+			<a  class="btn badge-pill" href="contactus1.html">Contact Us</a>
+			
+		</nav>
+<section>
+		<div class="container">
+		
+		<div class="accordion" id="accordionExample">
+		<div class="card">
+		<div class="card-header" id="restaurant">
+            <h5 class="mb-0">
+                <bu<tton class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    For every taste
+                </button>
+            </h5>
+		</div>
+		<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div class="card-body">
+            <p><a href=""target="_blank">PizzaForAll.ca <i class="fas fa-home"></i></a></p>
+            			   
+			</div>
+		
+			</div>
+			</div>
+	</div>
+	
+		<div class="row">	
+			<div class="col-lg-3 col-md">
+			<img src="images/Pizza1.jpg" alt="Resto site1 logo" class="img-fluid" />
+			</div>
+			
+			<div class="col-lg-9 col-md">
+						
+			<h4><strong>Here! We have Pizza for all taste</strong></h4>
+			<p>Dine in and takeout</p>
 			<p>Type : Meat Pizza, Veggie Pizza and Pizza with fruit</p>
-			<p>Size: Small - Medium - Large and slice</p>
-			</center>
+			<p>Size: Small - Medium - Large</p>
+			
 			<hr />
-			<center>
+			
 			<p>Location : 444-6th street, New Westminster, BC - Canada</p>
 			<p>Postal code	: V3L 1N7</p>
 			<p>Phone	: 1 438 935 9999</p>
-			</center>
+		
 			<hr />
-		</section>	
+		</div>
+		</div>
+		</div>
+		
+		</section>
+		
+
+		<footer>
+				
+		<p>&copy; 2021 Philippe Racine. All right reserved </p>
+		
+		</footer>
 	</main>		
-							
+	</div>
+	
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+		
+
+  
 </body>
 </html>
